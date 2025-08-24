@@ -9,7 +9,7 @@ export default function Contact() {
     if (window.emailjs && !window.__emailjs_inited) {
       try {
         // Put your public key here if you have one
-        window.emailjs.init({ publicKey: 'YOUR_PUBLIC_KEY' })
+        window.emailjs.init({ publicKey: 'AdYMCl6FkthJDhmqn' })
         window.__emailjs_inited = true
       } catch {}
     }
@@ -30,7 +30,7 @@ export default function Contact() {
     setStatus('sending')
     try {
       if (window.emailjs) {
-        await window.emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', data)
+        await window.emailjs.send('service_5rcpoaf', 'template_bo4svh6', data)
       } else {
         await new Promise(r => setTimeout(r, 800)) // simulate
       }
